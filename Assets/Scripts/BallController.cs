@@ -7,6 +7,15 @@ public class BallController : MonoBehaviour
     private Rigidbody rb_ball;
     public GameObject aimGuide;
     public float ballSpeed;
+    private float speedboost;
+    private float boosttimer;
+    private bool boosting;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
+
 
     public bool ballStopped;
 
@@ -48,6 +57,12 @@ public class BallController : MonoBehaviour
         rb_ball.isKinematic = true;
         rb_ball.isKinematic = false;
     }
+
+
+
+
+   
+
 
 
 
